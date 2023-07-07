@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Tomato: hsl(4, 100%, 67%);
+
+  /* ### Neutral */
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+
+  /* font-family */
+
+  --font-family: "Roboto", sans-serif;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  background: var(--White);
+  /* color: var(--clr-grey-1); */
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 2rem 0 2rem; */
+    gap: 1rem;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem 0 2rem;
+  }
+  .title {
+    color: var(--Dark-Slate-Grey);
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+  }
+  .right-mid {
+    color: var(--Charcoal-Grey);
+    display: flex;
+    flex-direction: column;
+    gap: 0.756rem;
+  }
+  .icons-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .icons-text div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .icons-text div img {
+    margin-bottom: 1rem;
+  }
+
+  /* footer-section */
+  footer {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    color: var(--Dark-Slate-Grey);
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 0.56rem;
+  }
+  .email-container {
+    width: 19.5rem;
+    height: 3rem;
+    background-color: var(--White);
+    border-radius: 8px;
+    border: 1px solid var(--Grey);
+    outline: none;
+  }
+  input[type="text"] {
+    padding-left: 2rem;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+
+  .btn {
+    width: 19.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    letter-spacing: 1.5px;
+    transition: all 0.3s linear;
+    font-size: small;
+    border: 2px solid #111111;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  .btn:hover {
+    color: #111111;
+    background: var(--Grey);
+  }
+}

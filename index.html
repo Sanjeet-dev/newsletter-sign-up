@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="left">
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration-image"
+        />
+      </section>
 
-  <!-- Sign-up form start -->
+      <!-- Sign-up form start -->
+      <section class="right">
+        <header class="title">Stay updated!</header>
 
-  Stay updated!
+        <article class="right-mid">
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+          <div class="icons-text">
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="icon" />
+              <p>Product discovery and building what matters</p>
+            </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="icon" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
 
-  Email address
-  email@company.com
+            <div>
+              <img src="./assets/images/icon-list.svg" alt="icon" />
+              <p>And much more!</p>
+            </div>
+          </div>
 
-  Subscribe to monthly newsletter
+          <footer>
+            <form action="" class="sign-up">
+              <label for="">Email address</label>
+              <input
+                class="email-container"
+                type="text"
+                placeholder="email@company.com"
+              />
+              <button class="btn">Subscribe to monthly newsletter</button>
+            </form>
+          </footer>
+        </article>
 
-  <!-- Sign-up form end -->
+        <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+        <!-- Success message start -->
 
-  Thanks for subscribing!
+        <!-- Thanks for subscribing! A confirmation email has been sent to
+        ash@loremcompany.com. Please open it and click the button inside to
+        confirm your subscription. Dismiss message -->
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Success message end -->
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
