@@ -19,7 +19,7 @@
   </head>
   <body>
     <main class="container">
-      <div class="first-page">
+      <div id="first-page">
         <section class="left">
           <img
             src="./assets/images/illustration-sign-up-mobile.svg"
@@ -72,23 +72,27 @@
           <!-- Sign-up form end -->
         </section>
       </div>
-      <div class="second-page">
-        <!-- Success message start -->
-        <div class="message">
-          <img src="./assets/images/icon-list.svg" alt="icon" />
-          <header class="title">Thanks for subscribing!</header>
+      <div id="second-page">
+        <div class="second-form">
+          <!-- Success message start -->
+          <div class="message">
+            <img src="./assets/images/icon-list.svg" alt="icon" />
+            <header class="title">Thanks for subscribing!</header>
 
-          <p>
-            A confirmation email has been sent to
-            <span><strong>ash@loremcompany.com</strong></span
-            >. Please open it and click the button inside to confirm your
-            subscription.
-          </p>
+            <p>
+              A confirmation email has been sent to
+              <span><strong>ash@loremcompany.com</strong></span
+              >. Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </div>
+
+          <button id="dismiss-btn" class="btn" onclick="handleDismiss()">
+            Dismiss message
+          </button>
+
+          <!-- Success message end -->
         </div>
-
-        <button id="dismiss-btn" class="btn">Dismiss message</button>
-
-        <!-- Success message end -->
       </div>
     </main>
     <script src="./script.js"></script>

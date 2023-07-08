@@ -1,44 +1,34 @@
-const mail = document.querySelector(".email-container");
 const form = document.querySelector(".sign-up");
+var firstPage = document.getElementById("first-page");
+var secondPage = document.getElementById("second-page");
+var mail = document.querySelector(".email-container");
+var email = mail.value;
 
 form.addEventListener("submit", (e) => {
   console.log("working");
   e.preventDefault();
 
-  validateEmail();
+  //validate - email
+  if (validateEmail(email)) {
+    firstPage.style.display = "none";
+    secondPage.style.display = "block";
+  } else {
+    setErrorMsg("valid email required");
+  }
 });
 
-const pattern = /^[a-zA-Z0-9][\w]{0,15}@[a-zA-Z]{4,12}\.[a-zA-Z]{3}$/;
-const emailVal = mail.value;
-const validateEmail = () => {
-  if (emailVal === "") {
-    setErrorMsg(mail, "Email address cannot be empty");
-  }
-  // } else if (emailVal.match(pattern)) {
-  //   setErrorMsg(mail);
+function validateEmail(email) {
+  var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return pattern.test(email);
+}
 
-  // }
-  else {
-    setErrorMsg(mail, "Please provide a valid email address");
-  }
-};
-
-function setErrorMsg(input, errormsgs) {
-  const formControl = input.parentElement;
+function setErrorMsg(errormsgs) {
   const msg = document.getElementById("error-msg");
-  formControl.className = "form-control error";
   msg.textContent = errormsgs;
 }
 
-const firstPage = document.querySelector(".first-page");
-const secondPage = document.querySelector(".second-page");
-const btn = document.querySelector(".btn");
-
-btn.addEventListener("submit", (e) => {
-  e.preventDefault.default();
-
-  if (mail.value.match(pattern)) {
-    firstPage.style.display = "none";
-    secondPage.style.display = "flex";
-  }
-});
+function handleDismiss() {
+  console.log("dismiss button working");
+  secondPage.style.display = "none";
+  firstPage.style.display = "block";
+}

@@ -126,14 +126,17 @@ body {
     color: #111111;
     background: var(--Grey);
   }
-  /* second page */
-
   .first-page {
     display: block;
   }
+  /* second page */
 
   .second-page {
     display: none;
+  }
+
+  .second-form {
+    display: flex;
     flex-direction: column;
     gap: 5rem;
     padding: 10rem 2rem 2rem 2rem;
