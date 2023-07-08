@@ -19,63 +19,77 @@
   </head>
   <body>
     <main class="container">
-      <section class="left">
-        <img
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="illustration-image"
-        />
-      </section>
+      <div class="first-page">
+        <section class="left">
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="illustration-image"
+          />
+        </section>
 
-      <!-- Sign-up form start -->
-      <section class="right">
-        <header class="title">Stay updated!</header>
+        <!-- Sign-up form start -->
+        <section class="right">
+          <header class="title">Stay updated!</header>
 
-        <article class="right-mid">
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <article class="right-mid">
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-          <div class="icons-text">
-            <div>
-              <img src="./assets/images/icon-list.svg" alt="icon" />
-              <p>Product discovery and building what matters</p>
-            </div>
-
-            <div>
-              <img src="./assets/images/icon-list.svg" alt="icon" />
-              <p>Measuring to ensure updates are a success</p>
-            </div>
-
-            <div>
-              <img src="./assets/images/icon-list.svg" alt="icon" />
-              <p>And much more!</p>
-            </div>
-          </div>
-
-          <footer>
-            <form class="sign-up">
-              <label for="">Email address</label>
-              <div class="form-control">
-                <input
-                  class="email-container"
-                  type="text"
-                  placeholder="email@company.com"
-                />
-                <span id="error-msg"></span>
+            <div class="icons-text">
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="icon" />
+                <p>Product discovery and building what matters</p>
               </div>
-              <button class="btn">Subscribe to monthly newsletter</button>
-            </form>
-          </footer>
-        </article>
 
-        <!-- Sign-up form end -->
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="icon" />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
 
+              <div>
+                <img src="./assets/images/icon-list.svg" alt="icon" />
+                <p>And much more!</p>
+              </div>
+            </div>
+
+            <footer>
+              <form class="sign-up">
+                <label for="">Email address</label>
+                <div class="form-control">
+                  <input
+                    class="email-container"
+                    type="text"
+                    placeholder="email@company.com"
+                  />
+                  <span id="error-msg"></span>
+                </div>
+                <button class="btn" type="submit">
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
+            </footer>
+          </article>
+
+          <!-- Sign-up form end -->
+        </section>
+      </div>
+      <div class="second-page">
         <!-- Success message start -->
+        <div class="message">
+          <img src="./assets/images/icon-list.svg" alt="icon" />
+          <header class="title">Thanks for subscribing!</header>
 
-        <!-- Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message -->
+          <p>
+            A confirmation email has been sent to
+            <span><strong>ash@loremcompany.com</strong></span
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+
+        <button id="dismiss-btn" class="btn">Dismiss message</button>
 
         <!-- Success message end -->
-      </section>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>

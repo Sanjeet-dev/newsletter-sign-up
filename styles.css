@@ -126,4 +126,32 @@ body {
     color: #111111;
     background: var(--Grey);
   }
+  /* second page */
+
+  .first-page {
+    display: block;
+  }
+
+  .second-page {
+    display: none;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 10rem 2rem 2rem 2rem;
+  }
+
+  .second-page .message {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .message img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .message .title {
+    line-height: 1;
+  }
+  #dismiss-btn {
+    margin-top: 10rem;
+  }
 }
