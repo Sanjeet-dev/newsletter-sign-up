@@ -10,8 +10,8 @@ form.addEventListener("submit", (e) => {
 
   //validate - email
   if (validateEmail(email)) {
-    firstPage.style.display = "none";
-    secondPage.style.display = "block";
+    firstPage.style.visibility = "hidden";
+    secondPage.style.display = "visible";
   } else {
     setErrorMsg("valid email required");
   }
@@ -29,6 +29,6 @@ function setErrorMsg(errormsgs) {
 
 function handleDismiss() {
   console.log("dismiss button working");
-  secondPage.style.display = "none";
-  firstPage.style.display = "block";
+  secondPage.style.visibility = "hidden";
+  firstPage.style.visiblity = "visible";
 }

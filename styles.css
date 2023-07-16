@@ -158,3 +158,147 @@ body {
     margin-top: 10rem;
   }
 }
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 98vw;
+    height: 98vh;
+    box-sizing: border-box;
+    position: relative;
+
+    /* margin: 0 2rem 0 2rem; */
+  }
+  #first-page {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    margin: 2rem 0 2rem 0;
+    visibility: hidden;
+  }
+  .left {
+    height: 39rem;
+    width: 39rem;
+    background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 3rem 0 2rem;
+  }
+  .title {
+    color: var(--Dark-Slate-Grey);
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 0.6rem;
+  }
+  .right-mid {
+    color: var(--Charcoal-Grey);
+    display: flex;
+    flex-direction: column;
+    gap: 0.756rem;
+  }
+  .icons-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .icons-text div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .icons-text div img {
+    margin-bottom: 1rem;
+  }
+
+  /* footer-section */
+  footer {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  label {
+    color: var(--Dark-Slate-Grey);
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 0.56rem;
+  }
+  .email-container {
+    width: 19.5rem;
+    height: 3rem;
+    background-color: var(--White);
+    border-radius: 8px;
+    border: 1px solid var(--Grey);
+    outline: none;
+  }
+  input[type="text"] {
+    padding-left: 2rem;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+  #error-msg {
+    position: absolute;
+    left: 12rem;
+    top: 0rem;
+    color: var(--Tomato);
+  }
+
+  .btn {
+    width: 19.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    letter-spacing: 1.5px;
+    transition: all 0.3s linear;
+    font-size: small;
+    border: 2px solid #111111;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  .btn:hover {
+    color: #111111;
+    background: var(--Grey);
+  }
+  #second-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+  }
+  #second-page {
+    position: absolute;
+    top: 8rem;
+    left: 35rem;
+    margin-right: 25rem;
+  }
+
+  #second-page .message {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .message img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .message .title {
+    line-height: 1;
+  }
+  #dismiss-btn {
+    margin-top: 4rem;
+  }
+}
