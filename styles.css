@@ -34,6 +34,17 @@ body {
   font-size: 0.875rem;
 }
 
+.keep-hidden {
+  display: none !important;
+}
+.email-check {
+  background-color: #edd4d4;
+  border: 1px solid red !important;
+}
+.email-check:focus {
+  outline: red;
+}
+
 @media screen and (max-width: 400px) {
   .container {
     display: flex;
@@ -172,7 +183,6 @@ body {
     flex-direction: row-reverse;
     gap: 1.5rem;
     margin: 2rem 0 2rem 0;
-    visibility: hidden;
   }
   .left {
     height: 39rem;
@@ -273,13 +283,14 @@ body {
     color: #111111;
     background: var(--Grey);
   }
+  #second-page {
+    position: relative;
+    display: none;
+  }
   #second-form {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    position: relative;
-  }
-  #second-page {
     position: absolute;
     top: 8rem;
     left: 35rem;
